@@ -4,3 +4,12 @@ export const getAllCars = async ():Promise<ICar[]> => {
      return await fetch('http://185.69.152.209/carsAPI/v1/cars')
             .then(response => response.json())
 }
+
+export const postCar = async (formData: FormData) =>  {
+     const response = await fetch("http://185.69.152.209/carsAPI/v1/cars",{
+          method: "POST",
+          body: formData
+     })
+     const data = await response.json();
+     console.log('Response from API:', data);
+}
