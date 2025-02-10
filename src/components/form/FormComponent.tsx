@@ -3,7 +3,7 @@ import Form from "next/form";
 import {saveAction} from "@/server-action/serverAction";
 import {useForm} from "react-hook-form";
 import {joiResolver} from "@hookform/resolvers/joi";
-import {carValidator} from "@/components/validators/validators";
+import {carValidator} from "@/app/validators/validators";
 import {ICar} from "@/models/ICar";
 
 export const FormComponent = () => {
