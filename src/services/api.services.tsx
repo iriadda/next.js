@@ -10,6 +10,6 @@ export const postCar = async (formData: FormData) =>  {
           method: "POST",
           body: formData
      })
-     const data = await response.json();
+     const data = response.json();
      console.log('Response from API:', data);
 }
